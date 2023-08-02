@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --header-bg: #e6f0ff;
+  --primary-color: #0f1b4c;
+}
+.container {
+  width: 1110px;
+  max-width: calc(100%-48px);
+  margin: 0 auto;
+}
+.btn {
+  --height: 50px;
+  display: inline-block;
+  padding: 0 12px;
+  line-height: var(--height);
+  height: var(--height);
+  border-radius: 12px;
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  min-width: 170px;
+  border: 1px solid --primary-color;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* Header & Aside*/
+.header,
+.aside {
+  background-color: var(--header-bg);
+}
+.aside {
+  position: sticky;
+  top: -26px;
+  padding-top: 26px;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+}
+.header-link {
+  padding: 0 14px;
+  color: #4f5361;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.sign-in-btn:hover,
+.header-link.active,
+.header-link:hover {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.header-link::before {
+  content: attr(title);
+  display: block;
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.header-auth {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 18px;
+}
+.sign-in-btn {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.sign-up-btn {
+  --height: 40px;
+  font-size: 1.4rem;
+  min-width: 98px;
+}
