@@ -90,40 +90,289 @@
     <link rel="stylesheet" href="./assests/css/styles.css" />
   </head>
   <body style="height: 5000px">
-    <aside class="aside">
-      <div class="container">
-        <div class="header-top">
-          <a href="/" class="header-logo">
-            <img src="./assests/img/logo.svg" alt="Besnik" />
-          </a>
-          <nav class="navbar">
-            <ul class="header-list">
-              <li class="header-item">
-                <a href="#!" class="header-link active" title="Home">Home</a>
-              </li>
-              <li class="header-item">
-                <a href="#!" class="header-link" title="Features">Features</a>
-              </li>
-              <li class="header-item">
-                <a href="#!" class="header-link" title="Services">Services</a>
-              </li>
-              <li class="header-item">
-                <a href="#!" class="header-link" title="Resources">Resources</a>
-              </li>
-              <li class="header-item">
-                <a href="#!" class="header-link" title="Contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-auth">
-            <a href="#!" class="sign-in-btn">Sign in</a>
-            <button href="#!" class="btn sign-up-btn">Sign up</button>
-          </div>
+    <header class="header">
+      <div class="container header-container">
+        <a href="#">
+          <img src="./assests/img/logo.svg" alt="Besnik" class="header-logo" />
+        </a>
+        <nav class="navbar">
+          <ul class="header-menu">
+            <li class="header-item">
+              <a href="#" class="header-link active" title="Home">Home</a>
+            </li>
+            <li class="header-item">
+              <a href="#service" class="header-link" title="Services"
+                >Services</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#feature" class="header-link" title="Features"
+                >Features</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#!" class="header-link" title="Resources">Resources</a>
+            </li>
+            <li class="header-item">
+              <a href="#!" class="header-link" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="auth">
+          <a href="" class="sign-in-btn">Sign in</a>
+          <button class="btn sign-up-btn">Sign up</button>
         </div>
       </div>
-    </aside>
-    <header class="header">
-      <div class="container header-container"></div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <section class="hero-content">
+            <p class="hero-sub-heading desc">Welcome to Besnik Agency</p>
+            <h1 class="heading heading-big hero-heading">
+              Discover a place you'll love to live.
+            </h1>
+            <p class="hero-desc desc">
+              get the best real estate deals first, before they hit the mass
+              market! hot foreclosure deals with one simple search.
+            </p>
+            <button class="btn hero-btn">More About Us</button>
+          </section>
+          <figure class="hero-media">
+            <img
+              src="./assests/img/house illustration.svg"
+              alt="Discover a place
+            you'll love to live."
+              class="hero-img"
+            />
+          </figure>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="container clients-container">
+          <div class="clients-top">
+            <div class="clients-text">
+              <a href="#!">
+                <img
+                  src="./assests/img/logo.svg"
+                  alt="Besnik"
+                  class="clients-logo"
+                />
+              </a>
+              <span class="desc clients-desc"
+                >More than 45,000+ companies trust besnik</span
+              >
+            </div>
+            <div class="clients-rate">
+              <figure class="clients-stars">
+                <img
+                  src="./assests/img/star.svg"
+                  alt="star"
+                  class="client-star"
+                />
+                <img
+                  src="./assests/img/star.svg"
+                  alt="star"
+                  class="client-star"
+                />
+                <img
+                  src="./assests/img/star.svg"
+                  alt="star"
+                  class="client-star"
+                />
+                <img
+                  src="./assests/img/star.svg"
+                  alt="star"
+                  class="client-star"
+                />
+                <img
+                  src="./assests/img/star.svg"
+                  alt="star"
+                  class="client-star"
+                />
+              </figure>
+              <span class="clients-desc desc">5 Star Ratings (2k+ Review)</span>
+            </div>
+          </div>
+          <figure class="partners">
+            <a href="#!"
+              ><img
+                src="./assests/img/partner1.svg"
+                alt="MeUndies"
+                class="partner"
+            /></a>
+            <a href="#!"
+              ><img
+                src="./assests/img/partner2.svg"
+                alt="slack"
+                class="partner"
+            /></a>
+            <a href="#!"
+              ><img
+                src="./assests/img/partner3.svg"
+                alt="amazon"
+                class="partner"
+            /></a>
+            <a href="#!"
+              ><img
+                src="./assests/img/partner4.svg"
+                alt="commerce"
+                class="partner"
+            /></a>
+            <a href="#!"
+              ><img
+                src="./assests/img/partner5.svg"
+                alt="sitepoint"
+                class="partner"
+            /></a>
+          </figure>
+        </div>
+      </section>
+      <section id="services" class="guides">
+        <div class="container guides-container">
+          <h2 class="heading guides-heading">How its works?</h2>
+          <p class="desc guides-desc">
+            Everything you need to know when you're looking to buy, rent, or
+            sell - all in one place.
+          </p>
+          <div class="guides-list">
+            <div class="guides-item">
+              <a href="#!">
+                <img src="./assests/img/buyer.svg" alt="" class="guides-img" />
+              </a>
+              <h3 class="heading guides-item-heading">Buyer Guides</h3>
+              <a href="#!" class="guides-cta">
+                <span>How to buy</span>
+                <img src="./assests/img/right-vector.svg" alt="" />
+              </a>
+            </div>
+            <div class="guides-item">
+              <a href="#!">
+                <img src="./assests/img/renter.svg" alt="" class="guides-img" />
+              </a>
+              <h3 class="heading guides-item-heading">Renter Guides</h3>
+              <a href="#!" class="guides-cta">
+                <span>How to buy</span>
+                <img src="./assests/img/right-vector.svg" alt="" />
+              </a>
+            </div>
+            <div class="guides-item">
+              <a href="#!">
+                <img src="./assests/img/seller.svg" alt="" class="guides-img" />
+              </a>
+              <h3 class="heading guides-item-heading">Seller Guides</h3>
+              <a href="#!" class="guides-cta">
+                <span>How to buy</span>
+                <img src="./assests/img/right-vector.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <button class="btn guides-btn">Sell Full Guidelines</button>
+        </div>
+      </section>
+      <section class="feature">
+        <div class="container feature-container">
+          <h2 class="heading feature-heading">Featured Properties</h2>
+          <div class="feature-text">
+            <span class="desc"
+              >Everything you need to know when you're looking</span
+            >
+            <a href="#!" class="feature-cta">
+              <span>View All Properties</span>
+              <img src="./assests/img/right-vector.svg" alt="" />
+            </a>
+          </div>
+          <div class="feature-list">
+            <div class="feature-item">
+              <a href="#!">
+                <img
+                  src="https://source.unsplash.com/random"
+                  alt=""
+                  class="feature-img"
+                />
+              </a>
+              <div class="feature-content">
+                <div class="h3 heading feature-heading">Nikko Apartments</div>
+                <span class="feature-desc"
+                  >8502 Preston Rd. Inglewood, Maine 98280</span
+                >
+                <ul class="feature-infos">
+                  <li class="feature-info">
+                    <img src="./assests/img/beds.svg" alt="" />
+                    <span>5 Beds</span>
+                  </li>
+                  <li class="feature-info">
+                    <img src="./assests/img/both.svg" alt="" />
+                    <span>2 both</span>
+                  </li>
+                  <li class="feature-info">
+                    <img src="./assests/img/sqft.svg" alt="" />
+                    <span>2000 Sqft</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature-item">
+              <a href="#!">
+                <img
+                  src="https://source.unsplash.com/random"
+                  alt=""
+                  class="feature-img"
+                />
+              </a>
+              <div class="feature-content">
+                <div class="h3 heading feature-heading">CouCou Homestead</div>
+                <span class="feature-desc"
+                  >8502 Preston Rd. Inglewood, Maine 98280</span
+                >
+                <ul class="feature-infos">
+                  <li class="feature-info">
+                    <img src="./assests/img/beds.svg" alt="" />
+                    <span>5 Beds</span>
+                  </li>
+                  <li class="feature-info">
+                    <img src="./assests/img/both.svg" alt="" />
+                    <span>2 both</span>
+                  </li>
+                  <li class="feature-info">
+                    <img src="./assests/img/sqft.svg" alt="" />
+                    <span>2000 Sqft</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature-item">
+              <a href="#!">
+                <img
+                  src="https://source.unsplash.com/random"
+                  alt=""
+                  class="feature-img"
+                />
+              </a>
+              <div class="feature-content">
+                <div class="h3 heading feature-heading">Lavis 18 Residence</div>
+                <span class="feature-desc"
+                  >8502 Preston Rd. Inglewood, Maine 98280</span
+                >
+                <ul class="feature-infos">
+                  <li class="feature-info">
+                    <img src="./assests/img/beds.svg" alt="" />
+                    <span>5 Beds</span>
+                  </li>
+                  <li class="feature-info">
+                    <img src="./assests/img/both.svg" alt="" />
+                    <span>2 both</span>
+                  </li>
+                  <li class="feature-info">
+                    <img src="./assests/img/sqft.svg" alt="" />
+                    <span>2000 Sqft</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
