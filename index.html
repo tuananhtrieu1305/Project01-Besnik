@@ -89,7 +89,7 @@
     <link rel="stylesheet" href="./assests/css/reset.css" />
     <link rel="stylesheet" href="./assests/css/styles.css" />
   </head>
-  <body style="height: 5000px">
+  <body>
     <header class="header">
       <div class="container header-container">
         <a href="#">
@@ -101,7 +101,7 @@
               <a href="#" class="header-link active" title="Home">Home</a>
             </li>
             <li class="header-item">
-              <a href="#service" class="header-link" title="Services"
+              <a href="#services" class="header-link" title="Services"
                 >Services</a
               >
             </li>
@@ -111,15 +111,17 @@
               >
             </li>
             <li class="header-item">
-              <a href="#!" class="header-link" title="Resources">Resources</a>
+              <a href="#resources" class="header-link" title="Resources"
+                >Resources</a
+              >
             </li>
             <li class="header-item">
-              <a href="#!" class="header-link" title="Contact">Contact</a>
+              <a href="#contact" class="header-link" title="Contact">Contact</a>
             </li>
           </ul>
         </nav>
         <div class="auth">
-          <a href="" class="sign-in-btn">Sign in</a>
+          <a href="#!" class="sign-in-btn">Sign in</a>
           <button class="btn sign-up-btn">Sign up</button>
         </div>
       </div>
@@ -270,7 +272,7 @@
           <button class="btn guides-btn">Sell Full Guidelines</button>
         </div>
       </section>
-      <section class="feature">
+      <section id="feature" class="feature">
         <div class="container feature-container">
           <h2 class="heading feature-heading">Featured Properties</h2>
           <div class="feature-text">
@@ -292,10 +294,10 @@
                 />
               </a>
               <div class="feature-content">
-                <div class="h3 heading feature-heading">Nikko Apartments</div>
-                <span class="feature-desc"
-                  >8502 Preston Rd. Inglewood, Maine 98280</span
-                >
+                <h3 class="heading feature-item-heading">Nikko Apartments</h3>
+                <span class="feature-desc text-clamp"
+                  >8502 Preston Rd. Inglewood, Maine 98280
+                </span>
                 <ul class="feature-infos">
                   <li class="feature-info">
                     <img src="./assests/img/beds.svg" alt="" />
@@ -321,10 +323,10 @@
                 />
               </a>
               <div class="feature-content">
-                <div class="h3 heading feature-heading">CouCou Homestead</div>
-                <span class="feature-desc"
-                  >8502 Preston Rd. Inglewood, Maine 98280</span
-                >
+                <h3 class="heading feature-item-heading">CouCou Homestead</h3>
+                <span class="feature-desc text-clamp"
+                  >8502 Preston Rd. Inglewood, Maine 98280
+                </span>
                 <ul class="feature-infos">
                   <li class="feature-info">
                     <img src="./assests/img/beds.svg" alt="" />
@@ -350,10 +352,10 @@
                 />
               </a>
               <div class="feature-content">
-                <div class="h3 heading feature-heading">Lavis 18 Residence</div>
-                <span class="feature-desc"
-                  >8502 Preston Rd. Inglewood, Maine 98280</span
-                >
+                <h3 class="heading feature-item-heading">Lavis 18 Residence</h3>
+                <span class="feature-desc text-clamp"
+                  >8502 Preston Rd. Inglewood, Maine 98280
+                </span>
                 <ul class="feature-infos">
                   <li class="feature-info">
                     <img src="./assests/img/beds.svg" alt="" />
@@ -373,6 +375,202 @@
           </div>
         </div>
       </section>
+      <section id="resources" class="resources">
+        <div class="container resources-container">
+          <div class="resources-top">
+            <figure class="resource-media">
+              <img
+                src="https://source.unsplash.com/random"
+                alt="You’ve found a neighborhood you love."
+                class="resources-img"
+              />
+              <div class="resources-stat">
+                <div class="resources-sub-title">
+                  <span>40,000+</span>
+                  <img src="./assests/img/stonk.svg" alt="" />
+                </div>
+                <p class="resources-text">
+                  By avarage for 2 bedroom apments in San Francisco, CA
+                </p>
+                <div class="separate"></div>
+                <figure class="user-icons">
+                  <div class="user-group">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                  </div>
+                  <div class="user-group">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                  </div>
+                  <div class="user-group">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                  </div>
+                  <div class="user-group">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                  </div>
+                  <div class="user-group">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                  </div>
+                  <div class="user-group">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                  </div>
+                  <div class="user-group">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    <img src="https://source.unsplash.com/random" alt="" />
+                  </div>
+                </figure>
+              </div>
+            </figure>
+            <section class="resources-content">
+              <h2 class="heading resources-heading">
+                You’ve found a neighborhood you love.
+              </h2>
+              <p class="resources-desc desc">
+                When you own a home, you’re committing to living in one location
+                for a while. In a recent Trulia survey, we found that five out
+                of six respondents said finding the right neighborhood
+              </p>
+            </section>
+          </div>
+          <div class="resources-bottom">
+            <div class="resources-quantity">
+              <strong>2,500</strong>
+              <span>Homes For Sale</span>
+            </div>
+            <div class="resources-quantity">
+              <strong>5,000+</strong>
+              <span>Homes Recently Sold</span>
+            </div>
+            <div class="resources-quantity">
+              <strong>170+</strong>
+              <span>Price Reduced</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="container contact-container">
+          <h2 class="heading contact-heading">Subscribe to our Newsletter!</h2>
+          <p class="desc contact-desc">
+            Subscribe to our newsletter and stay updated.
+          </p>
+          <button class="btn contact-btn">Subscribe</button>
+          <figure class="contact-media">
+            <img
+              src="./assests/img/subscribe.svg"
+              alt="Subscribe to our Newsletter!"
+              class="contact-img"
+            />
+          </figure>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-list">
+          <div class="footer-column">
+            <h3 class="footer-heading">Product</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#!" class="footer-link">Listing</a>
+              </li>
+              <li>
+                <a href="#!" class="footer-link">Property</a>
+              </li>
+              <li>
+                <a href="#!" class="footer-link">Agents</a>
+              </li>
+              <li>
+                <a href="#!" class="footer-link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Resources</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#!" class="footer-link">Our Homes</a>
+              </li>
+              <li>
+                <a href="#!" class="footer-link">Member Stories</a>
+              </li>
+              <li>
+                <a href="#!" class="footer-link">Video</a>
+              </li>
+              <li>
+                <a href="#!" class="footer-link">Free trial</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#!" class="footer-link">Partnerships</a>
+              </li>
+              <li>
+                <a href="#!" class="footer-link">Terms of use</a>
+              </li>
+              <li>
+                <a href="#!" class="footer-link">Privacy</a>
+              </li>
+              <li>
+                <a href="#!" class="footer-link">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Get in touch</h3>
+            <p class="footer-desc desc">
+              You’ll find your next home, in any style you prefer.
+            </p>
+            <figure class="socials">
+              <a href="#!">
+                <img
+                  src="./assests/img/facebook.svg"
+                  alt="Facebook"
+                  class="social"
+                />
+              </a>
+              <a href="#!">
+                <img
+                  src="./assests/img/twitter.svg"
+                  alt="Twitter"
+                  class="social"
+                />
+              </a>
+              <a href="#!">
+                <img
+                  src="./assests/img/lindedin.svg"
+                  alt="Linkedin"
+                  class="social"
+                />
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="footer-end">
+          <a href="#!">
+            <img
+              src="./assests/img/logo.svg"
+              alt="Besnik"
+              class="footer-logo"
+            />
+          </a>
+          <span class="copyright"
+            >Copyright 2020.com, All rights reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
