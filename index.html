@@ -88,17 +88,76 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assests/css/reset.css" />
     <link rel="stylesheet" href="./assests/css/styles.css" />
+    <link rel="stylesheet" href="./assests/css/responsive.css" />
   </head>
   <body>
+    <!-- PC Header -->
     <header class="header">
       <div class="container header-container">
         <a href="#">
           <img src="./assests/img/logo.svg" alt="Besnik" class="header-logo" />
         </a>
+        <label for="menu-checkbox" class="toggle-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </label>
         <nav class="navbar">
           <ul class="header-menu">
             <li class="header-item">
               <a href="#" class="header-link active" title="Home">Home</a>
+            </li>
+            <li class="header-item">
+              <a href="#services" class="header-link" title="Services"
+                >Services</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#feature" class="header-link" title="Features"
+                >Features</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#resources" class="header-link" title="Resources"
+                >Resources</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#contact" class="header-link" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="auth">
+          <a href="#!" class="sign-in-btn">Sign in</a>
+          <button class="btn sign-up-btn">Sign up</button>
+        </div>
+      </div>
+    </header>
+    <!-- Tablet & Mobile Header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox" class="menu-overlay"></label>
+      <div class="menu-drawer">
+        <a href="#">
+          <img src="./assests/img/logo.svg" alt="Besnik" />
+        </a>
+        <nav class="navbar">
+          <ul class="header-menu">
+            <li class="header-item">
+              <a href="#" class="header-link" title="Home">Home</a>
             </li>
             <li class="header-item">
               <a href="#services" class="header-link" title="Services"
@@ -230,7 +289,7 @@
           </figure>
         </div>
       </section>
-      <section id="services" class="guides">
+      <!-- <section id="services" class="guides">
         <div class="container guides-container">
           <h2 class="heading guides-heading">How its works?</h2>
           <p class="desc guides-desc">
@@ -271,8 +330,8 @@
           </div>
           <button class="btn guides-btn">Sell Full Guidelines</button>
         </div>
-      </section>
-      <section id="feature" class="feature">
+      </section> -->
+      <!-- <section id="feature" class="feature">
         <div class="container feature-container">
           <h2 class="heading feature-heading">Featured Properties</h2>
           <div class="feature-text">
@@ -374,8 +433,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="resources" class="resources">
+      </section> -->
+      <!-- <section id="resources" class="resources">
         <div class="container resources-container">
           <div class="resources-top">
             <figure class="resource-media">
@@ -456,8 +515,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="contact" class="contact">
+      </section> -->
+      <!-- <section id="contact" class="contact">
         <div class="container contact-container">
           <h2 class="heading contact-heading">Subscribe to our Newsletter!</h2>
           <p class="desc contact-desc">
@@ -472,9 +531,9 @@
             />
           </figure>
         </div>
-      </section>
+      </section>  -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-list">
           <div class="footer-column">
@@ -571,6 +630,6 @@
           >
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

@@ -1,0 +1,122 @@
+/* PC */
+@media screen and (min-width: 992px) {
+  .toggle-menu {
+    display: none;
+  }
+  .mobile-header {
+    display: none;
+  }
+}
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+  .header-container {
+    position: relative;
+  }
+  .header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header-menu {
+    display: none;
+  }
+  .toggle-menu svg {
+    height: 24px;
+  }
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+  }
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background-color: #fff;
+    z-index: 3;
+    padding: 40px;
+    transform: translateX(-100%);
+    transition: all 0.2s linear;
+  }
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  .menu-drawer img {
+    width: 25%;
+  }
+  .menu-drawer .navbar {
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  .menu-drawer .header-menu {
+    display: block;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34px 0;
+  }
+  .menu-drawer .header-item {
+    padding: 0;
+  }
+  .menu-drawer .header-link {
+    font-size: 24px;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .menu-drawer .auth {
+    display: none;
+  }
+  /* Hero */
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-heading {
+    font-size: 5.4rem;
+    margin-top: 0;
+  }
+  .hero-desc {
+    margin-top: 7px;
+  }
+  .hero-btn {
+    margin-top: 10px;
+  }
+  .hero-img {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+  .header .auth {
+    display: none;
+  }
+  .menu-drawer .auth {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    gap: 24px 0;
+  }
+  .menu-drawer .sign-in-btn {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  .menu-drawer .sign-up-btn {
+    font-size: 24px;
+    height: 60px;
+  }
+}
